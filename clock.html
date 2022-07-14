@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funny clock in Javascript</title>
+		<script src="clock.js"></script>
+	</head>
+	<body>
+		<h1>Funny clock in Javascript</h1><hr/>
+		
+        <p>
+            Choose format:
+			<select id="format" size="1" onchange="tick();">
+				<option value="dec">decimal</option>
+				<option value="bin">binary</option>
+				<option value="hex">hexadecimal</option>
+				<option value="bcd">bcd</option>
+			</select>
+        </p>
+		
+		<p>
+			<span id="clock">There is no time yet.</span>
+		</p>
+        <script>
+			window.setInterval("tick()",500);
+		</script>
+	</body>
+</html>
